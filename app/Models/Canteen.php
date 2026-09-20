@@ -19,6 +19,12 @@ class Canteen extends Model
         return ['tax_rate' => 'decimal:4', 'service_fee_rate' => 'decimal:4'];
     }
 
+    // Route model binding pakai slug, bukan id — biar URL /kantin/{slug} langsung ke-resolve.
+    public function getRouteKeyName(): string
+    {
+        return 'slug';
+    }
+
     /** @return HasMany<Tenant, $this> */
     public function tenants(): HasMany
     {

@@ -14,6 +14,8 @@ use Illuminate\Database\Eloquent\Model;
  * Catatan: scope hanya memfilter saat context terisi. Route internal SELALU mengisi context
  * (SetTenantContext); alur lintas-tenant yang sah memakai withoutGlobalScope('tenant') + filter
  * canteen/status eksplisit. Write tanpa context gagal via NOT NULL tenant_id di DB (fail-closed).
+ *
+ * @mixin Model
  */
 trait BelongsToTenant
 {

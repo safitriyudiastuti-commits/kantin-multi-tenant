@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Concerns\BelongsToTenant;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
@@ -11,6 +12,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  */
 class TenantBankAccount extends Model
 {
+    use BelongsToTenant;
+
     protected $fillable = ['bank_code', 'account_holder', 'account_last4', 'status', 'is_primary'];
 
     protected function casts(): array
