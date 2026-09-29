@@ -66,7 +66,6 @@ class AdminManagementTest extends TestCase
         $canteen = Canteen::factory()->create();
         $manager = $this->managerFor($canteen);
         Tenant::factory()->create(['canteen_id' => $canteen->id, 'code' => 'DUP']);
-
         $this->actingAs($manager);
         $this->post(route('admin.tenants.store'), [
             'display_name' => 'X', 'code' => 'DUP', 'slug' => 'x', 'commission_rate' => '10',

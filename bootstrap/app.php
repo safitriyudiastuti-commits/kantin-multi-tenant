@@ -32,10 +32,8 @@ return Application::configure(basePath: dirname(__DIR__))
                 ->group(base_path('routes/tenant.php'));
 
             // Konteks pengelola kantin (internal).
-            Route::middleware(['web', 'auth', 'verified', 'role:admin'])
-                ->prefix('admin')
-                ->name('admin.')
-                ->group(base_path('routes/admin.php'));
+            // prefix, name, dan middleware sudah dipasang oleh PortalRoutes::admin() di routes/admin.php
+            Route::group([], base_path('routes/admin.php'));
         },
     )
     ->withMiddleware(function (Middleware $middleware): void {

@@ -21,6 +21,6 @@ final class AdminServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-        //
+        $this->loadViewsFrom(__DIR__.'/resources/views', 'admin');
     }
 }

@@ -76,5 +76,13 @@ class FortifyServiceProvider extends ServiceProvider
                 ($credentialId ?: $request->session()->getId()).'|'.$request->ip(),
             );
         });
+
+        RateLimiter::for('qr-scan', function (Request $request) {
+            return Limit::perMinute(30)->by($request->ip());
+        });
+
+        RateLimiter::for('qris-webhook', function (Request $request) {
+            return Limit::perMinute(60)->by($request->ip());
+        });
     }
 }
