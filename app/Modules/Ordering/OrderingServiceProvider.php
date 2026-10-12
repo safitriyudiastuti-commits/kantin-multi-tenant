@@ -21,6 +21,14 @@ final class OrderingServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-        //
+        parent::boot();
+
+        // Rate limiter milik modul: entry QR meja publik (mengurangi brute force token QR).
+        RateLimiter::for('qr-scan', fn (Request $request): Limit => Limit::perMinute(30)->by($request->ip() ?? 'unknown'));
+    }
+
+    protected function moduleAlias(): string
+    {
+        return 'ordering';
     }
 }
