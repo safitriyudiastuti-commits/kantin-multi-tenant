@@ -28,13 +28,24 @@ class TenantMenuManagerTest extends TestCase
         return [$tenant, $user];
     }
 
+    public function test_menu_manager_page_renders_catalog_module_component(): void
+    {
+        [$tenant, $user] = $this->tenantWithMember();
+
+        $this->actingAs($user)
+            ->get(route('tenant.menu-manager', ['tenant' => $tenant->slug]))
+            ->assertOk()
+            ->assertSee('Kelola Menu')
+            ->assertSeeLivewire('catalog::menu-manager');
+    }
+
     public function test_member_creates_menu_with_tenant_id_from_context(): void
     {
         [$tenant, $user] = $this->tenantWithMember();
         $category = MenuCategory::factory()->create(['tenant_id' => $tenant->id]);
 
         Livewire::actingAs($user)
-            ->test('tenant.menu-manager', ['tenantId' => $tenant->id])
+            ->test('catalog::menu-manager', ['tenantId' => $tenant->id])
             ->set('name', 'Soto Ayam')
             ->set('categoryId', $category->id)
             ->set('basePrice', 15000)
@@ -53,7 +64,7 @@ class TenantMenuManagerTest extends TestCase
         $menu = Menu::factory()->create(['tenant_id' => $tenant->id, 'category_id' => $category->id, 'stock_qty' => 5, 'is_available' => true]);
 
         Livewire::actingAs($user)
-            ->test('tenant.menu-manager', ['tenantId' => $tenant->id])
+            ->test('catalog::menu-manager', ['tenantId' => $tenant->id])
             ->call('toggle', $menu->id)
             ->call('restock', $menu->id, 10);
 
@@ -74,7 +85,7 @@ class TenantMenuManagerTest extends TestCase
 
         // userA bukan anggota tenantB -> booted() harus abort 403
         Livewire::actingAs($userA)
-            ->test('tenant.menu-manager', ['tenantId' => $tenantB->id])
+            ->test('catalog::menu-manager', ['tenantId' => $tenantB->id])
             ->assertForbidden();
     }
 }

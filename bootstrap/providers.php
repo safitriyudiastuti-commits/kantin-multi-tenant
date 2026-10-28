@@ -5,6 +5,7 @@ use App\Modules\Payments\PaymentsServiceProvider;
 use App\Providers\AppServiceProvider;
 use App\Providers\FortifyServiceProvider;
 use App\Modules\Ordering\OrderingServiceProvider;
+use App\Modules\Catalog\CatalogServiceProvider;
 
 return [
     AppServiceProvider::class,
@@ -12,4 +13,5 @@ return [
     AdminServiceProvider::class,
     PaymentsServiceProvider::class,
     OrderingServiceProvider::class,
+    CatalogServiceProvider::class,
 ];
