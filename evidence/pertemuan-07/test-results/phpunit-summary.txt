@@ -1,3 +1,571 @@
 
-  [90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[31;1m⨯[39;22m[90;1m.[39;22m[90;1m.[39;22m[31;1m⨯[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[90;1m.[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[90;1m.[39;22m[31;1m⨯[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[90;1m.[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[90;1m.[39;22m[31;1m⨯[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m
-  [90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m
+  [90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[31;1m⨯[39;22m[90;1m.[39;22m[90;1m.[39;22m[31;1m⨯[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[90;1m.[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[90;1m.[39;22m[31;1m⨯[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m[90;1m.[39;22m[31;1m⨯[39;22m[31;1m⨯[39;22m
+  [31;1m⨯[39;22m[90;1m.[39;22m[31;1m⨯[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m[90;1m.[39;22m
+  [31m────────────────────────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mTests\Feature\CartLivewireTest[22m [90m>[39m cart without session sho… [41;1m ComponentNotFoundException [49;22m  
+[39;1m  Unable to find component: [cart][39;22m
+
+  at [32mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39m:[32m76[39m
+     72▕             }
+     73▕         }
+     74▕ 
+     75▕         if (! $class || ! class_exists($class) || ! is_subclass_of($class, Component::class)) {
+  ➜  76▕             throw new ComponentNotFoundException(
+     77▕                 "Unable to find component: [{$name}]"
+     78▕             );
+     79▕         }
+     80▕
+
+  [33m1   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39;22m:[39;1m76[39;22m
+  [33m2   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39;22m:[39;1m23[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mTests\Feature\CartLivewireTest[22m [90m>[39m add event adds line and…  [41;1m ComponentNotFoundException [49;22m  
+[39;1m  Unable to find component: [cart][39;22m
+
+  at [32mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39m:[32m76[39m
+     72▕             }
+     73▕         }
+     74▕ 
+     75▕         if (! $class || ! class_exists($class) || ! is_subclass_of($class, Component::class)) {
+  ➜  76▕             throw new ComponentNotFoundException(
+     77▕                 "Unable to find component: [{$name}]"
+     78▕             );
+     79▕         }
+     80▕
+
+  [33m1   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39;22m:[39;1m76[39;22m
+  [33m2   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39;22m:[39;1m23[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mTests\Feature\CartLivewireTest[22m [90m>[39m increment and remove upd… [41;1m ComponentNotFoundException [49;22m  
+[39;1m  Unable to find component: [cart][39;22m
+
+  at [32mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39m:[32m76[39m
+     72▕             }
+     73▕         }
+     74▕ 
+     75▕         if (! $class || ! class_exists($class) || ! is_subclass_of($class, Component::class)) {
+  ➜  76▕             throw new ComponentNotFoundException(
+     77▕                 "Unable to find component: [{$name}]"
+     78▕             );
+     79▕         }
+     80▕
+
+  [33m1   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39;22m:[39;1m76[39;22m
+  [33m2   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39;22m:[39;1m23[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mTests\Feature\CartLivewireTest[22m [90m>[39m catalog add button dispa… [41;1m ComponentNotFoundException [49;22m  
+[39;1m  Unable to find component: [menu-catalog][39;22m
+
+  at [32mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39m:[32m76[39m
+     72▕             }
+     73▕         }
+     74▕ 
+     75▕         if (! $class || ! class_exists($class) || ! is_subclass_of($class, Component::class)) {
+  ➜  76▕             throw new ComponentNotFoundException(
+     77▕                 "Unable to find component: [{$name}]"
+     78▕             );
+     79▕         }
+     80▕
+
+  [33m1   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39;22m:[39;1m76[39;22m
+  [33m2   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39;22m:[39;1m23[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mTests\Feature\CustomerScanUseCaseTest[22m [90m>[39m scan during hours gre… [41;1m RouteNotFoundException [49;22m  
+[39;1m  Route [customer.welcome] not defined.[39;22m
+
+  at [32mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\UrlGenerator.php[39m:[32m542[39m
+    538▕             ! is_null($url = call_user_func($this->missingNamedRouteResolver, $name, $parameters, $absolute))) {
+    539▕             return $url;
+    540▕         }
+    541▕ 
+  ➜ 542▕         throw new RouteNotFoundException("Route [{$name}] not defined.");
+    543▕     }
+    544▕ 
+    545▕     /**
+    546▕      * Get the URL for a given route instance.
+
+  [33m1   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\UrlGenerator.php[39;22m:[39;1m542[39;22m
+  [33m2   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php[39;22m:[39;1m870[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mTests\Feature\CustomerScanUseCaseTest[22m [90m>[39m welcome without sessi… [41;1m RouteNotFoundException [49;22m  
+[39;1m  Route [customer.welcome] not defined.[39;22m
+
+  at [32mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\UrlGenerator.php[39m:[32m542[39m
+    538▕             ! is_null($url = call_user_func($this->missingNamedRouteResolver, $name, $parameters, $absolute))) {
+    539▕             return $url;
+    540▕         }
+    541▕ 
+  ➜ 542▕         throw new RouteNotFoundException("Route [{$name}] not defined.");
+    543▕     }
+    544▕ 
+    545▕     /**
+    546▕      * Get the URL for a given route instance.
+
+  [33m1   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\UrlGenerator.php[39;22m:[39;1m542[39;22m
+  [33m2   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php[39;22m:[39;1m870[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mTests\Feature\EndToEndJourneyTest[22m [90m>[39m full customer to withdrawal journey         [41;1m Error [49;22m  
+[39;1m  Class "App\Events\TenantOrderStatusChanged" not found[39;22m
+
+  at [32mC:\ServBay\www\servbay\kantin-multi-tenant\app\Modules\Kitchen\Services\KitchenService.php[39m:[32m55[39m
+     51▕             $tenantOrder->forceFill(['status' => $target])->save();
+     52▕ 
+     53▕             $this->audit->record('tenant_order', $tenantOrder->id, 'kitchen_'.$target, ['status' => $from], ['status' => $target], (int) $tenantOrder->tenant_id);
+     54▕ 
+  ➜  55▕             event(new TenantOrderStatusChanged($tenantOrder));
+     56▕ 
+     57▕             return $tenantOrder;
+     58▕         });
+     59▕     }
+
+  [33m1   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\app\Modules\Kitchen\Services\KitchenService.php[39;22m:[39;1m55[39;22m
+  [33m2   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Database\Concerns\ManagesTransactions.php[39;22m:[39;1m35[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mTests\Feature\FinanceFlowTest[22m [90m>[39m finance panel forbidden f… [41;1m ComponentNotFoundException [49;22m  
+[39;1m  Unable to find component: [tenant.finance-panel][39;22m
+
+  at [32mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39m:[32m76[39m
+     72▕             }
+     73▕         }
+     74▕ 
+     75▕         if (! $class || ! class_exists($class) || ! is_subclass_of($class, Component::class)) {
+  ➜  76▕             throw new ComponentNotFoundException(
+     77▕                 "Unable to find component: [{$name}]"
+     78▕             );
+     79▕         }
+     80▕
+
+  [33m1   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39;22m:[39;1m76[39;22m
+  [33m2   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39;22m:[39;1m23[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mTests\Feature\FinanceFlowTest[22m [90m>[39m member requests withdrawa… [41;1m ComponentNotFoundException [49;22m  
+[39;1m  Unable to find component: [tenant.finance-panel][39;22m
+
+  at [32mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39m:[32m76[39m
+     72▕             }
+     73▕         }
+     74▕ 
+     75▕         if (! $class || ! class_exists($class) || ! is_subclass_of($class, Component::class)) {
+  ➜  76▕             throw new ComponentNotFoundException(
+     77▕                 "Unable to find component: [{$name}]"
+     78▕             );
+     79▕         }
+     80▕
+
+  [33m1   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39;22m:[39;1m76[39;22m
+  [33m2   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39;22m:[39;1m23[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mTests\Feature\FinanceFlowTest[22m [90m>[39m admin reviews and cross c… [41;1m ComponentNotFoundException [49;22m  
+[39;1m  Unable to find component: [admin.withdrawal-review][39;22m
+
+  at [32mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39m:[32m76[39m
+     72▕             }
+     73▕         }
+     74▕ 
+     75▕         if (! $class || ! class_exists($class) || ! is_subclass_of($class, Component::class)) {
+  ➜  76▕             throw new ComponentNotFoundException(
+     77▕                 "Unable to find component: [{$name}]"
+     78▕             );
+     79▕         }
+     80▕
+
+  [33m1   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39;22m:[39;1m76[39;22m
+  [33m2   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39;22m:[39;1m23[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mTests\Feature\KitchenBoardLivewireTest[22m [90m>[39m non member canno… [41;1m ComponentNotFoundException [49;22m  
+[39;1m  Unable to find component: [tenant.kitchen-board][39;22m
+
+  at [32mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39m:[32m76[39m
+     72▕             }
+     73▕         }
+     74▕ 
+     75▕         if (! $class || ! class_exists($class) || ! is_subclass_of($class, Component::class)) {
+  ➜  76▕             throw new ComponentNotFoundException(
+     77▕                 "Unable to find component: [{$name}]"
+     78▕             );
+     79▕         }
+     80▕
+
+  [33m1   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39;22m:[39;1m76[39;22m
+  [33m2   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39;22m:[39;1m23[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mTests\Feature\KitchenBoardLivewireTest[22m [90m>[39m member sees paid… [41;1m ComponentNotFoundException [49;22m  
+[39;1m  Unable to find component: [tenant.kitchen-board][39;22m
+
+  at [32mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39m:[32m76[39m
+     72▕             }
+     73▕         }
+     74▕ 
+     75▕         if (! $class || ! class_exists($class) || ! is_subclass_of($class, Component::class)) {
+  ➜  76▕             throw new ComponentNotFoundException(
+     77▕                 "Unable to find component: [{$name}]"
+     78▕             );
+     79▕         }
+     80▕
+
+  [33m1   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39;22m:[39;1m76[39;22m
+  [33m2   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39;22m:[39;1m23[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mTests\Feature\KitchenServiceTest[22m [90m>[39m valid transitions advance and broadcast      [41;1m Error [49;22m  
+[39;1m  Class "App\Events\TenantOrderStatusChanged" not found[39;22m
+
+  at [32mC:\ServBay\www\servbay\kantin-multi-tenant\app\Modules\Kitchen\Services\KitchenService.php[39m:[32m55[39m
+     51▕             $tenantOrder->forceFill(['status' => $target])->save();
+     52▕ 
+     53▕             $this->audit->record('tenant_order', $tenantOrder->id, 'kitchen_'.$target, ['status' => $from], ['status' => $target], (int) $tenantOrder->tenant_id);
+     54▕ 
+  ➜  55▕             event(new TenantOrderStatusChanged($tenantOrder));
+     56▕ 
+     57▕             return $tenantOrder;
+     58▕         });
+     59▕     }
+
+  [33m1   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\app\Modules\Kitchen\Services\KitchenService.php[39;22m:[39;1m55[39;22m
+  [33m2   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Database\Concerns\ManagesTransactions.php[39;22m:[39;1m35[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mTests\Feature\ModularFoundationTest[22m [90m>[39m guest is redirected to…  [41;1m RouteNotFoundException [49;22m  
+[39;1m  Route [admin.dashboard] not defined.[39;22m
+
+  at [32mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\UrlGenerator.php[39m:[32m542[39m
+    538▕             ! is_null($url = call_user_func($this->missingNamedRouteResolver, $name, $parameters, $absolute))) {
+    539▕             return $url;
+    540▕         }
+    541▕ 
+  ➜ 542▕         throw new RouteNotFoundException("Route [{$name}] not defined.");
+    543▕     }
+    544▕ 
+    545▕     /**
+    546▕      * Get the URL for a given route instance.
+
+  [33m1   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\UrlGenerator.php[39;22m:[39;1m542[39;22m
+  [33m2   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php[39;22m:[39;1m870[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mTests\Feature\ModularFoundationTest[22m [90m>[39m tenant member can open tenant dashboard            
+[39;1m  Expected response status code [200] but received 500.
+Failed asserting that 500 is identical to 200.
+
+The following exception occurred during the last request:
+
+InvalidArgumentException: View [tenant.dashboard] not found. in C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\View\FileViewFinder.php:138
+Stack trace:
+#0 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\View\FileViewFinder.php(78): Illuminate\View\FileViewFinder->findInPaths('tenant.dashboar...', Array)
+#1 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\View\Factory.php(150): Illuminate\View\FileViewFinder->find('tenant.dashboar...')
+#2 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(1101): Illuminate\View\Factory->make('tenant.dashboar...', Array, Array)
+#3 C:\ServBay\www\servbay\kantin-multi-tenant\routes\tenant.php(13): view('tenant.dashboar...', Array)
+#4 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\CallableDispatcher.php(39): Illuminate\Routing\RouteFileRegistrar->{closure:C:\ServBay\www\servbay\kantin-multi-tenant\routes\tenant.php:13}(Object(App\Models\Tenant))
+#5 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\Route.php(254): Illuminate\Routing\CallableDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(Closure))
+#6 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\Route.php(219): Illuminate\Routing\Route->runCallable()
+#7 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\Router.php(822): Illuminate\Routing\Route->run()
+#8 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(180): Illuminate\Routing\Router->{closure:Illuminate\Routing\Router::runRouteWithinStack():821}(Object(Illuminate\Http\Request))
+#9 C:\ServBay\www\servbay\kantin-multi-tenant\app\Http\Middleware\SetTenantContext.php(50): Illuminate\Pipeline\Pipeline->{closure:Illuminate\Pipeline\Pipeline::prepareDestination():178}(Object(Illuminate\Http\Request))
+#10 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): App\Http\Middleware\SetTenantContext->handle(Object(Illuminate\Http\Request), Object(Closure))
+#11 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Auth\Middleware\EnsureEmailIsVerified.php(41): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#12 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Auth\Middleware\EnsureEmailIsVerified->handle(Object(Illuminate\Http\Request), Object(Closure))
+#13 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\Middleware\SubstituteBindings.php(52): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#14 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Routing\Middleware\SubstituteBindings->handle(Object(Illuminate\Http\Request), Object(Closure))
+#15 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Auth\Middleware\Authenticate.php(63): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#16 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Auth\Middleware\Authenticate->handle(Object(Illuminate\Http\Request), Object(Closure))
+#17 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestForgery.php(104): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#18 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestForgery->handle(Object(Illuminate\Http\Request), Object(Closure))
+#19 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\View\Middleware\ShareErrorsFromSession.php(48): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#20 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#21 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(120): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#22 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(63): Illuminate\Session\Middleware\StartSession->handleStatefulRequest(Object(Illuminate\Http\Request), Object(Illuminate\Session\Store), Object(Closure))
+#23 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#24 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse.php(36): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#25 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#26 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\EncryptCookies.php(74): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#27 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#28 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(137): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#29 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\Router.php(821): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#30 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\Router.php(800): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#31 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\Router.php(764): Illuminate\Routing\Router->runRoute(Object(Illuminate\Http\Request), Object(Illuminate\Routing\Route))
+#32 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\Router.php(753): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#33 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(200): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#34 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(180): Illuminate\Foundation\Http\Kernel->{closure:Illuminate\Foundation\Http\Kernel::dispatchToRouter():197}(Object(Illuminate\Http\Request))
+#35 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Features\SupportDisablingBackButtonCache\DisableBackButtonCacheMiddleware.php(19): Illuminate\Pipeline\Pipeline->{closure:Illuminate\Pipeline\Pipeline::prepareDestination():178}(Object(Illuminate\Http\Request))
+#36 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Livewire\Features\SupportDisablingBackButtonCache\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\Http\Request), Object(Closure))
+#37 C:\ServBay\www\servbay\kantin-multi-tenant\app\Http\Middleware\SecurityHeaders.php(17): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#38 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): App\Http\Middleware\SecurityHeaders->handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#40 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle(Object(Illuminate\Http\Request), Object(Closure))
+#41 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull->handle(Object(Illuminate\Http\Request), Object(Closure))
+#42 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#43 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php(51): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle(Object(Illuminate\Http\Request), Object(Closure))
+#44 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\TrimStrings->handle(Object(Illuminate\Http\Request), Object(Closure))
+#45 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#46 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\ValidatePostSize->handle(Object(Illuminate\Http\Request), Object(Closure))
+#47 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php(110): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#48 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance->handle(Object(Illuminate\Http\Request), Object(Closure))
+#49 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php(61): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#50 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\HandleCors->handle(Object(Illuminate\Http\Request), Object(Closure))
+#51 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php(58): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#52 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\TrustProxies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#53 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks.php(22): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#54 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks->handle(Object(Illuminate\Http\Request), Object(Closure))
+#55 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePathEncoding.php(28): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#56 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\ValidatePathEncoding->handle(Object(Illuminate\Http\Request), Object(Closure))
+#57 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(137): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#58 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(175): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#59 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(144): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#60 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\MakesHttpRequests.php(638): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#61 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\MakesHttpRequests.php(368): Illuminate\Foundation\Testing\TestCase->call('GET', 'http://localhos...', Array, Array, Array, Array)
+#62 C:\ServBay\www\servbay\kantin-multi-tenant\tests\Feature\ModularFoundationTest.php(58): Illuminate\Foundation\Testing\TestCase->get('http://localhos...')
+#63 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\Framework\TestCase.php(1461): Tests\Feature\ModularFoundationTest->test_tenant_member_can_open_tenant_dashboard()
+#64 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\Framework\TestCase.php(1475): PHPUnit\Framework\TestCase->invokeTestMethod('test_tenant_mem...', Array)
+#65 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\Framework\TestCase.php(496): PHPUnit\Framework\TestCase->runTest()
+#66 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\Framework\TestRunner\TestRunner.php(126): PHPUnit\Framework\TestCase->runBare()
+#67 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\Framework\TestCase.php(328): PHPUnit\Framework\TestRunner\TestRunner->run(Object(Tests\Feature\ModularFoundationTest))
+#68 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\Framework\TestSuite.php(627): PHPUnit\Framework\TestCase->run()
+#69 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\Framework\TestSuite.php(420): PHPUnit\Framework\TestSuite->runTests(Array, Object(PHPUnit\Event\DispatchingEmitter))
+#70 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\Framework\TestSuite.php(627): PHPUnit\Framework\TestSuite->run()
+#71 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\Framework\TestSuite.php(420): PHPUnit\Framework\TestSuite->runTests(Array, Object(PHPUnit\Event\DispatchingEmitter))
+#72 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\Framework\TestSuite.php(627): PHPUnit\Framework\TestSuite->run()
+#73 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\Framework\TestSuite.php(420): PHPUnit\Framework\TestSuite->runTests(Array, Object(PHPUnit\Event\DispatchingEmitter))
+#74 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(64): PHPUnit\Framework\TestSuite->run()
+#75 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\TextUI\Application.php(255): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\TextUI\Configuration\Configuration), Object(PHPUnit\Runner\TestRunHistory\DefaultTestRunHistory), Object(PHPUnit\Framework\TestSuite))
+#76 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\pestphp\pest\src\Kernel.php(100): PHPUnit\TextUI\Application->run(Array)
+#77 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\pestphp\pest\bin\pest(207): Pest\Kernel->handle(Array, Array)
+#78 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\pestphp\pest\bin\pest(215): {closure:C:\ServBay\www\servbay\kantin-multi-tenant\vendor\pestphp\pest\bin\pest:21}()
+#79 {main}
+
+----------------------------------------------------------------------------------
+
+View [tenant.dashboard] not found.[39;22m
+
+  at [32mC:\ServBay\www\servbay\kantin-multi-tenant\tests\Feature\ModularFoundationTest.php[39m:[32m58[39m
+     54▕         $user = $this->user('tenant');
+     55▕         $this->actingAs($user);
+     56▕         $tenant = $this->tenantWithMember($user);
+     57▕ 
+  ➜  58▕         $this->get(route('tenant.dashboard', ['tenant' => $tenant->slug]))->assertOk();
+     59▕     }
+     60▕ 
+     61▕     public function test_admin_can_open_admin_dashboard(): void
+     62▕     {
+
+  [31m────────────────────────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mTests\Feature\ModularFoundationTest[22m [90m>[39m admin can open admin da… [41;1m RouteNotFoundException [49;22m  
+[39;1m  Route [admin.dashboard] not defined.[39;22m
+
+  at [32mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\UrlGenerator.php[39m:[32m542[39m
+    538▕             ! is_null($url = call_user_func($this->missingNamedRouteResolver, $name, $parameters, $absolute))) {
+    539▕             return $url;
+    540▕         }
+    541▕ 
+  ➜ 542▕         throw new RouteNotFoundException("Route [{$name}] not defined.");
+    543▕     }
+    544▕ 
+    545▕     /**
+    546▕      * Get the URL for a given route instance.
+
+  [33m1   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\UrlGenerator.php[39;22m:[39;1m542[39;22m
+  [33m2   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php[39;22m:[39;1m870[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mTests\Feature\ModularFoundationTest[22m [90m>[39m non member is forbidden… [41;1m RouteNotFoundException [49;22m  
+[39;1m  Route [admin.dashboard] not defined.[39;22m
+
+  at [32mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\UrlGenerator.php[39m:[32m542[39m
+    538▕             ! is_null($url = call_user_func($this->missingNamedRouteResolver, $name, $parameters, $absolute))) {
+    539▕             return $url;
+    540▕         }
+    541▕ 
+  ➜ 542▕         throw new RouteNotFoundException("Route [{$name}] not defined.");
+    543▕     }
+    544▕ 
+    545▕     /**
+    546▕      * Get the URL for a given route instance.
+
+  [33m1   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\UrlGenerator.php[39;22m:[39;1m542[39;22m
+  [33m2   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php[39;22m:[39;1m870[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mTests\Feature\ModularFoundationTest[22m [90m>[39m user without role is fo… [41;1m RouteNotFoundException [49;22m  
+[39;1m  Route [admin.dashboard] not defined.[39;22m
+
+  at [32mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\UrlGenerator.php[39m:[32m542[39m
+    538▕             ! is_null($url = call_user_func($this->missingNamedRouteResolver, $name, $parameters, $absolute))) {
+    539▕             return $url;
+    540▕         }
+    541▕ 
+  ➜ 542▕         throw new RouteNotFoundException("Route [{$name}] not defined.");
+    543▕     }
+    544▕ 
+    545▕     /**
+    546▕      * Get the URL for a given route instance.
+
+  [33m1   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\UrlGenerator.php[39;22m:[39;1m542[39;22m
+  [33m2   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php[39;22m:[39;1m870[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mTests\Feature\ModularFoundationTest[22m [90m>[39m all six module providers are registered            
+[39;1m  Provider tidak terdaftar: App\Modules\Kitchen\KitchenServiceProvider
+Failed asserting that an array contains 'App\Modules\Kitchen\KitchenServiceProvider'.[39;22m
+
+  at [32mC:\ServBay\www\servbay\kantin-multi-tenant\tests\Feature\ModularFoundationTest.php[39m:[32m112[39m
+    108▕             PaymentsServiceProvider::class,
+    109▕             KitchenServiceProvider::class,
+    110▕             ReportingServiceProvider::class,
+    111▕         ] as $p) {
+  ➜ 112▕             $this->assertContains($p, $providers, "Provider tidak terdaftar: {$p}");
+    113▕         }
+    114▕     }
+    115▕ }
+    116▕
+
+  [33m1   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\tests\Feature\ModularFoundationTest.php[39;22m:[39;1m112[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mTests\Feature\OrderCheckoutFlowTest[22m [90m>[39m livewire checkout c… [41;1m ComponentNotFoundException [49;22m  
+[39;1m  Unable to find component: [cart][39;22m
+
+  at [32mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39m:[32m76[39m
+     72▕             }
+     73▕         }
+     74▕ 
+     75▕         if (! $class || ! class_exists($class) || ! is_subclass_of($class, Component::class)) {
+  ➜  76▕             throw new ComponentNotFoundException(
+     77▕                 "Unable to find component: [{$name}]"
+     78▕             );
+     79▕         }
+     80▕
+
+  [33m1   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39;22m:[39;1m76[39;22m
+  [33m2   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39;22m:[39;1m23[39;22m
+
+  [31m────────────────────────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mTests\Feature\OrderCheckoutFlowTest[22m [90m>[39m order status page renders with tracking cookie     
+[39;1m  Expected response status code [200] but received 500.
+Failed asserting that 500 is identical to 200.
+
+The following exception occurred during the last request:
+
+InvalidArgumentException: View [customer.order] not found. in C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\View\FileViewFinder.php:138
+Stack trace:
+#0 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\View\FileViewFinder.php(78): Illuminate\View\FileViewFinder->findInPaths('customer.order', Array)
+#1 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\View\Factory.php(150): Illuminate\View\FileViewFinder->find('customer.order')
+#2 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php(1101): Illuminate\View\Factory->make('customer.order', Array, Array)
+#3 C:\ServBay\www\servbay\kantin-multi-tenant\app\Http\Controllers\Customer\OrderStatusController.php(27): view('customer.order', Array)
+#4 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php(46): App\Http\Controllers\Customer\OrderStatusController->__invoke(Object(Illuminate\Http\Request), 'ud-prakasa-pkgw', Object(App\Modules\Ordering\Services\ResolveTrackedOrder))
+#5 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\Route.php(276): Illuminate\Routing\ControllerDispatcher->dispatch(Object(Illuminate\Routing\Route), Object(App\Http\Controllers\Customer\OrderStatusController), '__invoke')
+#6 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\Route.php(216): Illuminate\Routing\Route->runController()
+#7 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\Router.php(822): Illuminate\Routing\Route->run()
+#8 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(180): Illuminate\Routing\Router->{closure:Illuminate\Routing\Router::runRouteWithinStack():821}(Object(Illuminate\Http\Request))
+#9 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\Middleware\SubstituteBindings.php(52): Illuminate\Pipeline\Pipeline->{closure:Illuminate\Pipeline\Pipeline::prepareDestination():178}(Object(Illuminate\Http\Request))
+#10 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Routing\Middleware\SubstituteBindings->handle(Object(Illuminate\Http\Request), Object(Closure))
+#11 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestForgery.php(104): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#12 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestForgery->handle(Object(Illuminate\Http\Request), Object(Closure))
+#13 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\View\Middleware\ShareErrorsFromSession.php(48): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#14 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\View\Middleware\ShareErrorsFromSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#15 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(120): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#16 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Session\Middleware\StartSession.php(63): Illuminate\Session\Middleware\StartSession->handleStatefulRequest(Object(Illuminate\Http\Request), Object(Illuminate\Session\Store), Object(Closure))
+#17 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Session\Middleware\StartSession->handle(Object(Illuminate\Http\Request), Object(Closure))
+#18 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse.php(36): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#19 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse->handle(Object(Illuminate\Http\Request), Object(Closure))
+#20 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Cookie\Middleware\EncryptCookies.php(74): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#21 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Cookie\Middleware\EncryptCookies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#22 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(137): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#23 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\Router.php(821): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#24 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\Router.php(800): Illuminate\Routing\Router->runRouteWithinStack(Object(Illuminate\Routing\Route), Object(Illuminate\Http\Request))
+#25 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\Router.php(764): Illuminate\Routing\Router->runRoute(Object(Illuminate\Http\Request), Object(Illuminate\Routing\Route))
+#26 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Routing\Router.php(753): Illuminate\Routing\Router->dispatchToRoute(Object(Illuminate\Http\Request))
+#27 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(200): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#28 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(180): Illuminate\Foundation\Http\Kernel->{closure:Illuminate\Foundation\Http\Kernel::dispatchToRouter():197}(Object(Illuminate\Http\Request))
+#29 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Features\SupportDisablingBackButtonCache\DisableBackButtonCacheMiddleware.php(19): Illuminate\Pipeline\Pipeline->{closure:Illuminate\Pipeline\Pipeline::prepareDestination():178}(Object(Illuminate\Http\Request))
+#30 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Livewire\Features\SupportDisablingBackButtonCache\DisableBackButtonCacheMiddleware->handle(Object(Illuminate\Http\Request), Object(Closure))
+#31 C:\ServBay\www\servbay\kantin-multi-tenant\app\Http\Middleware\SecurityHeaders.php(17): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#32 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): App\Http\Middleware\SecurityHeaders->handle(Object(Illuminate\Http\Request), Object(Closure))
+#33 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#34 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php(31): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle(Object(Illuminate\Http\Request), Object(Closure))
+#35 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull->handle(Object(Illuminate\Http\Request), Object(Closure))
+#36 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php(21): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#37 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php(51): Illuminate\Foundation\Http\Middleware\TransformsRequest->handle(Object(Illuminate\Http\Request), Object(Closure))
+#38 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\TrimStrings->handle(Object(Illuminate\Http\Request), Object(Closure))
+#39 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePostSize.php(27): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#40 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\ValidatePostSize->handle(Object(Illuminate\Http\Request), Object(Closure))
+#41 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php(110): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#42 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance->handle(Object(Illuminate\Http\Request), Object(Closure))
+#43 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php(61): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#44 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\HandleCors->handle(Object(Illuminate\Http\Request), Object(Closure))
+#45 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php(58): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#46 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\TrustProxies->handle(Object(Illuminate\Http\Request), Object(Closure))
+#47 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks.php(22): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#48 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks->handle(Object(Illuminate\Http\Request), Object(Closure))
+#49 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePathEncoding.php(28): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#50 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(219): Illuminate\Http\Middleware\ValidatePathEncoding->handle(Object(Illuminate\Http\Request), Object(Closure))
+#51 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php(137): Illuminate\Pipeline\Pipeline->{closure:{closure:Illuminate\Pipeline\Pipeline::carry():194}:195}(Object(Illuminate\Http\Request))
+#52 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(175): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#53 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php(144): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
+#54 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\MakesHttpRequests.php(638): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#55 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\laravel\framework\src\Illuminate\Foundation\Testing\Concerns\MakesHttpRequests.php(368): Illuminate\Foundation\Testing\TestCase->call('GET', 'http://localhos...', Array, Array, Array, Array)
+#56 C:\ServBay\www\servbay\kantin-multi-tenant\tests\Feature\OrderCheckoutFlowTest.php(89): Illuminate\Foundation\Testing\TestCase->get('http://localhos...')
+#57 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\Framework\TestCase.php(1461): Tests\Feature\OrderCheckoutFlowTest->test_order_status_page_renders_with_tracking_cookie()
+#58 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\Framework\TestCase.php(1475): PHPUnit\Framework\TestCase->invokeTestMethod('test_order_stat...', Array)
+#59 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\Framework\TestCase.php(496): PHPUnit\Framework\TestCase->runTest()
+#60 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\Framework\TestRunner\TestRunner.php(126): PHPUnit\Framework\TestCase->runBare()
+#61 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\Framework\TestCase.php(328): PHPUnit\Framework\TestRunner\TestRunner->run(Object(Tests\Feature\OrderCheckoutFlowTest))
+#62 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\Framework\TestSuite.php(627): PHPUnit\Framework\TestCase->run()
+#63 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\Framework\TestSuite.php(420): PHPUnit\Framework\TestSuite->runTests(Array, Object(PHPUnit\Event\DispatchingEmitter))
+#64 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\Framework\TestSuite.php(627): PHPUnit\Framework\TestSuite->run()
+#65 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\Framework\TestSuite.php(420): PHPUnit\Framework\TestSuite->runTests(Array, Object(PHPUnit\Event\DispatchingEmitter))
+#66 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\Framework\TestSuite.php(627): PHPUnit\Framework\TestSuite->run()
+#67 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\Framework\TestSuite.php(420): PHPUnit\Framework\TestSuite->runTests(Array, Object(PHPUnit\Event\DispatchingEmitter))
+#68 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(64): PHPUnit\Framework\TestSuite->run()
+#69 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\phpunit\phpunit\src\TextUI\Application.php(255): PHPUnit\TextUI\TestRunner->run(Object(PHPUnit\TextUI\Configuration\Configuration), Object(PHPUnit\Runner\TestRunHistory\DefaultTestRunHistory), Object(PHPUnit\Framework\TestSuite))
+#70 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\pestphp\pest\src\Kernel.php(100): PHPUnit\TextUI\Application->run(Array)
+#71 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\pestphp\pest\bin\pest(207): Pest\Kernel->handle(Array, Array)
+#72 C:\ServBay\www\servbay\kantin-multi-tenant\vendor\pestphp\pest\bin\pest(215): {closure:C:\ServBay\www\servbay\kantin-multi-tenant\vendor\pestphp\pest\bin\pest:21}()
+#73 {main}
+
+----------------------------------------------------------------------------------
+
+View [customer.order] not found.[39;22m
+
+  at [32mC:\ServBay\www\servbay\kantin-multi-tenant\tests\Feature\OrderCheckoutFlowTest.php[39m:[32m91[39m
+     87▕ 
+     88▕         $response = $this->withUnencryptedCookie('order_tracking', $plain)
+     89▕             ->get(route('customer.order.show', ['canteen' => $canteen->slug]));
+     90▕ 
+  ➜  91▕         $response->assertOk();
+     92▕         $response->assertSee($result->order->order_number);
+     93▕     }
+     94▕ 
+     95▕     public function test_order_status_page_generic_404_without_valid_cookie(): void
+
+  [31m────────────────────────────────────────────────────────────────────────────────────────────────[39m  
+  [41;1m FAILED [49;22m [1mTests\Feature\PaymentLivewireTest[22m [90m>[39m initiate then simulat… [41;1m ComponentNotFoundException [49;22m  
+[39;1m  Unable to find component: [order-payment][39;22m
+
+  at [32mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39m:[32m76[39m
+     72▕             }
+     73▕         }
+     74▕ 
+     75▕         if (! $class || ! class_exists($class) || ! is_subclass_of($class, Component::class)) {
+  ➜  76▕             throw new ComponentNotFoundException(
+     77▕                 "Unable to find component: [{$name}]"
+     78▕             );
+     79▕         }
+     80▕
+
+  [33m1   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39;22m:[39;1m76[39;22m
+  [33m2   [39m[39;1mC:\ServBay\www\servbay\kantin-multi-tenant\vendor\livewire\livewire\src\Factory\Factory.php[39;22m:[39;1m23[39;22m
+
+
+  [90mTests:[39m    [31;1m22 failed[39;22m[90m,[39m[39m [39m[32;1m133 passed[39;22m[90m (437 assertions)[39m
+  [90mDuration:[39m [39m14.34s[39m
+
