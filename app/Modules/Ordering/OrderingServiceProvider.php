@@ -3,6 +3,9 @@
 namespace App\Modules\Ordering;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Cache\RateLimiting\Limit;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\RateLimiter;
 
 /**
  * Modul: Ordering.
@@ -21,10 +24,12 @@ final class OrderingServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-        parent::boot();
+        $this->loadViewsFrom(__DIR__.'/resources/views', 'ordering');
 
-        // Rate limiter milik modul: entry QR meja publik (mengurangi brute force token QR).
-        RateLimiter::for('qr-scan', fn (Request $request): Limit => Limit::perMinute(30)->by($request->ip() ?? 'unknown'));
+        RateLimiter::for(
+            'qr-scan',
+            fn (Request $request): Limit => Limit::perMinute(30)->by($request->ip() ?? 'unknown'),
+        );
     }
 
     protected function moduleAlias(): string
