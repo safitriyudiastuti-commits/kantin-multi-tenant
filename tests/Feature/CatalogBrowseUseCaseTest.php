@@ -81,7 +81,7 @@ class CatalogBrowseUseCaseTest extends TestCase
                 'checkout_key' => (string) Str::uuid(), 'tracking_token_hash' => random_bytes(32), 'status' => 'paid']);
             $order->save();
             $to = (new TenantOrder)->forceFill(['order_id' => $order->id, 'tenant_id' => $tenant->id, 'commission_id' => $commission->id, 'status' => $status,
-            'commission_rate_snapshot' => 0.1, 'subtotal_amount' => 10000, 'commission_amount' => 1000, 'net_amount' => 9000]);
+                'commission_rate_snapshot' => 0.1, 'subtotal_amount' => 10000, 'commission_amount' => 1000, 'net_amount' => 9000]);
             $to->save();
             (new OrderItem)->forceFill(['tenant_id' => $tenant->id, 'tenant_order_id' => $to->id, 'menu_id' => $menuId, 'name_snapshot' => 'X',
                 'unit_price_snapshot' => 10000, 'prep_minutes_snapshot' => 10, 'quantity' => 1, 'line_total' => 10000])->save();

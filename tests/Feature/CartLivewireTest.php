@@ -65,7 +65,7 @@ class CartLivewireTest extends TestCase
         $this->get(route('customer.home', ['canteen' => $canteen->slug]))
             ->assertOk()
             ->assertSeeLivewire('catalog::menu-catalog')
-             ->assertSeeLivewire('ordering::cart');
+            ->assertSeeLivewire('ordering::cart');
     }
 
     public function test_cart_without_session_shows_empty_state_and_add_is_noop(): void

@@ -29,6 +29,7 @@ final class ResolveTableQrController extends Controller
 
         if ($result['status'] === 'closed') {
             $tenants = $this->hours->activeTenants($result['canteen']);
+
             return response()->view('ordering::canteen-closed', [
                 'canteen' => $result['canteen'],
                 'table' => $result['table'],
@@ -54,6 +55,6 @@ final class ResolveTableQrController extends Controller
         return redirect()
             ->route('customer.home', ['canteen' => $canteen->slug])
             ->withCookie($cookie);
-        ;
+
     }
 }

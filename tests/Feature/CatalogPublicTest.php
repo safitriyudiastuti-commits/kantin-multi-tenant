@@ -59,7 +59,7 @@ class CatalogPublicTest extends TestCase
         [$canteen, $tenant] = $this->canteenWithTenant();
         $this->menu($tenant, ['name' => 'Ayam Bakar']);
         $this->menu($tenant, ['name' => 'Es Teh']);
-        
+
         Livewire::test('catalog::menu-catalog', ['canteenSlug' => $canteen->slug])
             ->set('search', 'Ayam')
             ->assertSee('Ayam Bakar')

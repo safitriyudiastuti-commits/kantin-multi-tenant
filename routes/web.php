@@ -1,7 +1,7 @@
 <?php
 
-use App\Modules\Ordering\Http\Controllers\ResolveTableQrController;
 use App\Http\Controllers\Webhooks\QrisWebhookController;
+use App\Modules\Ordering\Http\Controllers\ResolveTableQrController;
 use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome')->name('home');

@@ -28,7 +28,6 @@ final class TenantOpeningHours
             return false;
         }
 
-        
         $now = $local->format('H:i:s');
         $opens = (string) $today->opens_at;
         $closes = (string) $today->closes_at;

@@ -18,7 +18,8 @@ use App\Support\Tokens\OpaqueToken;
 final class ResolveTableScan
 {
     public function __construct(private TenantOpeningHours $hours) {}
-     /**
+
+    /**
      * @return array{status: 'ok', session: CustomerSession, plain: string, canteen: Canteen, table: DiningTable}|array{status: 'closed', canteen: Canteen, table: DiningTable}|null
      */
     public function resolve(string $plainToken): ?array
