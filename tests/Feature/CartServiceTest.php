@@ -203,7 +203,6 @@ class CartServiceTest extends TestCase
         // Modifier milik tenant lain harus ditolak.
         $otherTenant = Tenant::factory()->create(['canteen_id' => $canteen->id]);
         $foreignOption = ModifierOption::factory()->create(['tenant_id' => $otherTenant->id]);
-
         $this->expectException(CartException::class);
         $this->cart()->add($session, $menu->id, 1, [$foreignOption->id]);
     }

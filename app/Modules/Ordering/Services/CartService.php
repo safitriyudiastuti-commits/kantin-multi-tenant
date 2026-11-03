@@ -20,7 +20,6 @@ use Illuminate\Support\Facades\Redis;
  *  - Menu wajib milik tenant AKTIF dari canteen sesi. Injeksi menu lintas-canteen/tenant
  *    ditolak di add() (query ter-scope canteen).
  *  - Hanya key milik sesi yang disentuh (SETEX/DEL satu key). Tidak ada FLUSHDB / hapus global.
- *
  * @phpstan-type CartItem array{line_key: string, menu_id: int, tenant_id: int, quantity: int, modifier_option_ids: list<int>, price_at_add: int, name_at_add: string, tenant_name_at_add: string}
  */
 final class CartService
@@ -178,7 +177,6 @@ final class CartService
             ? collect()
             : ModifierOption::query()
                 ->withoutGlobalScope('tenant')
-                ->with('group:id,name')
                 ->where('tenant_id', $menu->tenant_id)
                 ->whereIn('id', $modifierIds)
                 ->get();
@@ -213,11 +211,8 @@ final class CartService
             quantity: $quantity,
             unitPrice: $unitPrice,
             priceAtAdd: (int) $item['price_at_add'],
-            prepMinutes: (int) ($menu->prep_minutes ?? 0),
             modifiers: array_values($options->map(fn (ModifierOption $o): array => [
                 'id' => $o->id,
-                'group_id' => (int) $o->group_id,
-                'group_name' => (string) $o->group->name,
                 'name' => (string) $o->name,
                 'price_delta' => (int) $o->price_delta,
             ])->all()),
@@ -258,8 +253,7 @@ final class CartService
         if ($modifierIds === []) {
             /** @var Collection<int, ModifierOption> $empty */
             $empty = ModifierOption::query()->whereRaw('1 = 0')->get();
-
-            return $empty;
+             return $empty;
         }
 
         $options = ModifierOption::query()
@@ -339,7 +333,7 @@ final class CartService
     private function ttlSeconds(CustomerSession $session): int
     {
         if ($session->expires_at !== null) {
-            $remaining = now()->diffInSeconds($session->expires_at, false);
+             $remaining = now()->diffInSeconds($session->expires_at, false);
             if ($remaining > 0) {
                 return (int) $remaining;
             }

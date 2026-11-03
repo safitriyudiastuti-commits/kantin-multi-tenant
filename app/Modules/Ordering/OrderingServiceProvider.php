@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\RateLimiter;
+use Livewire\Livewire;
 
 /**
  * Modul: Ordering.
@@ -25,6 +26,12 @@ final class OrderingServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadViewsFrom(__DIR__.'/resources/views', 'ordering');
+
+                // Agar komponen Livewire berawalan ordering:: dikenali
+        Livewire::addNamespace(
+            namespace: 'ordering',
+            viewPath: __DIR__.'/resources/views/livewire'
+        );
 
         RateLimiter::for(
             'qr-scan',

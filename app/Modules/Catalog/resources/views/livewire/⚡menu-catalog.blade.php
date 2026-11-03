@@ -37,6 +37,15 @@ new class extends Component
         $this->category = $name;
     }
 
+    /**
+     * Meneruskan permintaan tambah ke komponen keranjang (yang memegang sesi tepercaya).
+     * Katalog sendiri anonim; ia tidak menyimpan/menentukan harga.
+     */
+    public function add(int $menuId): void
+    {
+        $this->dispatch('cart-add', menuId: $menuId);
+    }
+
     #[Computed]
     public function canteen(): ?Canteen
     {
@@ -95,7 +104,6 @@ new class extends Component
                 @endforeach
             </div>
         </div>
-
         @forelse ($this->groups as $menus)
             @php($tenant = $menus->first()->tenant)
             @php($open = $hours->isOpen($tenant))
@@ -119,13 +127,18 @@ new class extends Component
                             @endif
                             <div class="min-w-0 flex-1">
                                 <p class="truncate font-semibold">{{ $menu->name }}</p>
-                                <p class="truncate text-xs text-zinc-500">{{ $menu->description ? 
-                                    $menu->description.' · ' : '' }}± {{ $menu->prep_minutes }} mnt</p>
+                                <p class="truncate text-xs text-zinc-500">{{ $menu->description ? $menu->description.' · ' : '' }}± {{ $menu->prep_minutes }} mnt</p>
                                 <p class="text-sm font-semibold">Rp{{ number_format($menu->base_price, 0, ',', '.') }}</p>
                             </div>
                             @unless ($menu->is_available && $menu->stock_qty > 0)
                                 <span class="shrink-0 rounded border border-zinc-300 px-2 py-0.5 text-[10px] font-bold text-zinc-600">HABIS</span>
                             @endunless
+                            @if ($sellable)
+                                <button type="button" wire:click="add({{ $menu->id }})"
+                                    class="min-h-9 shrink-0 rounded-lg border border-zinc-300 px-3 text-sm font-medium dark:border-zinc-600">
+                                    + Tambah
+                                </button>
+                            @endif
                         </li>
                     @endforeach
                 </ul>
